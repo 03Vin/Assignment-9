@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+
+class Student {
+public:
+    std::string name;
+    int age;
+    int rollNumber;
+
+    void display() {
+        std::cout << "Name: " << this->name << std::endl;
+        std::cout << "Age: " << this->age << std::endl;
+        std::cout << "Roll Number: " << this->rollNumber << std::endl;
+    }
+};
+
+int main() {
+    Student student1;
+    student1.name = "John";
+    student1.age = 20;
+    student1.rollNumber = 101;
+
+    student1.display();
+
+    return 0;
+}
